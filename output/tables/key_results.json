@@ -1,0 +1,87 @@
+{
+  "pricing": {
+    "put_call_parity_max_abs_error": 2.842170943040401e-14,
+    "delta_analytic_vs_numeric_abs_diff": 8.274014806630703e-11,
+    "binomial_max_abs_err_2000_steps": 0.000999796733526459,
+    "mc_max_err_in_std_errors": 0.3392369950087461,
+    "atm_call_price": 10.450583572185565
+  },
+  "convergence": {
+    "black_scholes_atm_call": 10.450583572185565,
+    "binomial_err_10_steps": 0.19717452731363494,
+    "binomial_err_5000_steps": 0.0003999337138882453,
+    "mc_err_1k": 0.5386039649051888,
+    "mc_err_1m": 0.002611710259525779,
+    "mc_stderr_slope_vs_logN": -0.4818070149303779,
+    "american_put_atm": 6.088810110703039,
+    "european_put_atm": 5.5695275865157745,
+    "early_exercise_premium_atm": 0.5192825241872647,
+    "early_exercise_premium_K130": 4.700736071372759
+  },
+  "smile": {
+    "data_source": "Merton jump-diffusion (model-generated, not market data)",
+    "diffusion_vol": 0.15,
+    "jump_intensity": 0.5,
+    "jump_mean": -0.1,
+    "jump_std": 0.15,
+    "total_vol": 0.19685019685029528,
+    "atm_iv_pct": {
+      "1M": 16.979993057773097,
+      "3M": 17.91564731997705,
+      "6M": 18.503344732263255,
+      "12M": 18.968259600921208
+    },
+    "skew_pts_90_minus_110": {
+      "1M": 7.493695639240217,
+      "3M": 3.9651545847073506,
+      "6M": 2.550464655897891,
+      "12M": 1.5171013355265024
+    },
+    "contracts_inverted": 164
+  },
+  "hedging": {
+    "config": {
+      "paths": 40000,
+      "trading_days": 60,
+      "spot": 100.0,
+      "strike": 100.0,
+      "rate": 0.03,
+      "realised_vol": 0.2,
+      "seed": 2026
+    },
+    "std_monthly_3": 1.8054107574771827,
+    "std_weekly_12": 0.9441960392823714,
+    "std_daily_60": 0.43208475006459296,
+    "std_four_per_day_240": 0.21755500710639766,
+    "std_vs_rebalances_loglog_slope": -0.4794052300676314,
+    "matched_vol_daily_mean_pnl": -0.003641205981905067,
+    "matched_vol_daily_mean_se": 0.0021604507561262033,
+    "mismatch_sell_at_25": {
+      "sim": 0.9640648024923488,
+      "se": 0.0026837193588642185,
+      "theory": 0.9667210147988184
+    },
+    "mismatch_sell_at_15": {
+      "sim": -0.9703578118838806,
+      "se": 0.003011615362987318,
+      "theory": -0.9670566418286904
+    },
+    "jumps": {
+      "total_vol": 0.19685019685029528,
+      "gbm_std": 0.4258803295934146,
+      "jump_std": 2.402683119999956,
+      "gbm_p1": -1.162787129680299,
+      "jump_p1": -12.22072785502632,
+      "gbm_worst": -2.723547841144907,
+      "jump_worst": -43.72816747447823,
+      "jump_excess_kurtosis": 40.14187613324108,
+      "gbm_excess_kurtosis": 1.5490683510347916
+    },
+    "costs_5bps": {
+      "daily_cost": 0.14914371563679865,
+      "weekly_cost": 0.07939134816691105,
+      "daily_std": 0.43976394655625034,
+      "weekly_std": 0.9496333643058471
+    }
+  }
+}
